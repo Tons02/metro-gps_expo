@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Metro GPS",
+    "slug": "metro-gps",
+    "version": "2.0.5",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["location", "fetch"],
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location while it is in use to provide you with location-based services.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location while it is in use to provide you with location-based services.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location while it is in use to provide you with location-based services."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {},
+      "package": "com.rdfmis.metrogps",
+      "permissions": ["ACCESS_BACKGROUND_LOCATION"],
+      "versionCode": 2
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "58eef6f0-ef8d-4ed7-b0e9-201becf35d3d"
+      }
+    }
+  }
+}
